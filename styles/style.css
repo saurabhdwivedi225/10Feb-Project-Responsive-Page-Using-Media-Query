@@ -1,0 +1,161 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: #111827;
+    color: white;
+}
+img:hover{
+    cursor: pointer;
+}
+.container{
+    display: flex;
+    flex-direction: column;
+}
+/* For navbar  */
+.navbar{
+float: right;
+color:#fff;
+justify-content: center;
+align-items: center;
+margin: 5px 20px 0 0;
+}
+/* For ul  */
+.list-items{
+display: flex;
+flex-direction: row;
+gap: 15px;
+font-weight: 500;
+}
+/* For li  */
+.list-items li{
+    list-style: none;
+    cursor: pointer;
+    font-size:15px;
+}
+/* For using in media query display none  */
+img[alt="menu"]{
+    width: 20px;
+    display: none;
+}
+.home-option{
+    padding: 2px 10px;
+    background: rgb(100, 100, 224);
+    border-radius: 15px;
+    color: white;
+    align-items: center;
+}
+
+.hero-top-section{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+.hero-top-left-section{
+    color: white;
+    max-width: 400px;
+    font-size: 13px;
+    line-height: 30px;
+    margin-right: 10px;
+}
+/* 2 nd line of top left section  */
+.large-size{
+    font-size: 25px;
+}
+/* last line of top left section  */
+.give-color{
+    color: #C5C559;
+}
+/* Hero bottom section  */
+.hero-bottom-section{
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+color: #fff;
+text-align: center;
+padding-top: 10px;
+}
+/* For Heading  */
+.hero-bottom-section-heading{
+    text-align: center;
+    border-bottom: 5px solid #0000FF;
+    text-decoration:none;
+    padding-top: 30px;
+}
+/* For hero bottom image come in side by side to each other  */
+.hero-bottom-section-img{
+    display: grid;
+    grid-template-columns:1fr 1fr;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+/* Giving image width which attribute value is pc-image  */
+img[alt="pc-image"]{
+    width: 10vw;
+}
+.hero-bottom-section img{
+height: 100px;
+}
+/* For footer  */
+.footer{
+display:flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+text-align: center;
+padding-top: 10px;
+}
+.footer h3{
+    color: white;
+    border-bottom: 5px solid #0000FF;
+ margin-bottom: 8px;
+} 
+.footer img {
+    height: 12px;
+    width: 12px;
+    margin-bottom: 5px;
+}
+/* Media Query for responsiveness  */
+@media screen and  (max-width:768px){
+.list-items{
+    display:none;
+}
+img[alt="menu"]
+{
+    display: block;
+}
+.hero-top-section{
+    display: flex;
+    flex-direction: column;
+}
+img[alt="pc-image"]{
+    width: 20vw;
+}
+.hero-top-left-section{
+ display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 10px;
+        font-size: 18px;
+        line-height: 40px;
+        text-align: center;
+}
+.large-size{
+    font-size: 40px;
+}
+.hero-bottom-section-img{
+display: grid;
+grid-template-columns: 1fr;
+align-items: center;
+justify-content: center;
+row-gap: 10px;
+column-gap: 10px;
+}
+.hero-bottom-section img{
+    height: 100px;
+}
+}
